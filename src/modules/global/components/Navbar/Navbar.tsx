@@ -32,7 +32,7 @@ export const Navbar = () => {
 
 				<ul
 					className={`fixed w-full sm:w-fit h-full top-0 left-0 z-50 bg-white flex-col sm:flex-row justify-center sm:relative flex items-center gap-8 transition-all duration-300 sm:opacity-100 sm:visible ${
-						isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+						isOpen ? 'opacity-100 visible z-10' : 'opacity-0 invisible'
 					}`}>
 					<button
 						className='sm:hidden absolute top-4 right-4 cursor-pointer'
