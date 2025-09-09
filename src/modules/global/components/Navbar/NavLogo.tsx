@@ -4,7 +4,7 @@ export const NavLogo = () => {
 	return (
 		<Link
 			href='/'
-			className='inline-flex items-center gap-3'>
+			className='inline-flex items-center gap-3 w-fit'>
 			<img
 				src='/logo.svg'
 				alt='Logo'

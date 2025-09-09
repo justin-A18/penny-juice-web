@@ -14,7 +14,7 @@ export const NavItem = ({ href, label }: NavItemProps) => {
 
 	return (
 		<li
-			className={`font-medium relative before:content-[''] before:size-2 before:bg-primary before:absolute before:-bottom-3 before:left-1/2 before:rounded-full hover:text-primary hover:before:bg-primary hover:before:opacity-100 hover:before:visible transition-colors duration-300 before:transition-opacity before:duration-300 ${
+			className={`font-medium text-2xl sm:text-sm md:text-base relative sm:before:content-[''] sm:before:size-2 sm:before:bg-primary sm:before:absolute sm:before:-bottom-3 sm:before:left-1/2 sm:before:rounded-full hover:text-primary sm:hover:sm:before:bg-primary sm:hover:sm:before:opacity-100 sm:hover:sm:before:visible transition-colors duration-300 sm:before:transition-opacity sm:before:duration-300 ${
 				isActive
 					? 'text-primary before:opacity-100 before:visible'
 					: 'text-neutral-600 before:opacity-0 before:invisible'
