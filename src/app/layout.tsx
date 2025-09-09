@@ -10,7 +10,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
 	title: 'Penny Juice',
-	description: 'A juice bar POS system',
+	description:
+		'Delicious, natural, and affordable juices for children and families',
 	icons: {
 		icon: '/logo.svg',
 	},
