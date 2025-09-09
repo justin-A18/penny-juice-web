@@ -1,10 +1,11 @@
+import { Carrousel } from '@/modules/global/components/carousel/Carrousel';
 import { Footer } from '@/modules/global/components/Footer/Footer';
 import { Navbar } from '@/modules/global/components/Navbar/Navbar';
 import { AmazingInfoSection } from '@/modules/main/components/Sections/AmazingInfoSection';
+import { FacebookFeedSection } from '@/modules/main/components/Sections/FacebookFeedSection';
 import { HeroSection } from '@/modules/main/components/Sections/HeroSection';
 import { NutritionalSection } from '@/modules/main/components/Sections/NutritionalSection';
 import { ReasonsSection } from '@/modules/main/components/Sections/ReasonsSection';
-import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 				<ReasonsSection />
 				<AmazingInfoSection />
 				<NutritionalSection />
+				<FacebookFeedSection />
 			</main>
 
 			<Footer />
