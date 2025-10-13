@@ -11,7 +11,7 @@ export const NavLogo = () => {
 				className='size-10'
 			/>
 
-			<span className='font-semibold hidden md:block'>Penny Juice</span>
+			<span className='font-semibold'>Penny Juice</span>
 		</Link>
 	);
 };

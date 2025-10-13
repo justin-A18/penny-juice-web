@@ -8,8 +8,8 @@ export const FacebookIcon = ({ className, ...props }: Props) => {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
-			fill={props.fill || '#F54749'}
-			stroke={props.fill || '#F54749'}
+			fill={props.fill || '#000000'}
+			stroke={props.fill || '#000000'}
 			className={className}
 			{...props}
 			viewBox='0 0 24 24'>

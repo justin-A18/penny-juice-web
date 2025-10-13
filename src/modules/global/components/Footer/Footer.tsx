@@ -56,20 +56,14 @@ export const Footer = () => {
 						href='https://www.facebook.com/PENNYJUICE/?ref=embed_page'
 						rel='noopener noreferrer'
 						target='_blank'>
-						<FacebookIcon
-							className='size-7'
-							fill='#000000'
-						/>
+						<FacebookIcon className='size-7' />
 					</Link>
 
 					<Link
 						href='https://x.com/1PENNYJUICE'
 						rel='noopener noreferrer'
 						target='_blank'>
-						<TwitterIcon
-							className='size-5'
-							fill='#000000'
-						/>
+						<TwitterIcon className='size-5' />
 					</Link>
 				</div>
 			</div>

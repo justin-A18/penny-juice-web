@@ -6,9 +6,10 @@ import Link from 'next/link';
 interface NavItemProps {
 	href: string;
 	label: string;
+	onClick?: () => void;
 }
 
-export const NavItem = ({ href, label }: NavItemProps) => {
+export const NavItem = ({ href, label, onClick }: NavItemProps) => {
 	const pathname = usePathname();
 	const isActive = pathname === href && (href !== '/' || pathname === '/');
 
@@ -19,7 +20,11 @@ export const NavItem = ({ href, label }: NavItemProps) => {
 					? 'text-primary before:opacity-100 before:visible'
 					: 'text-neutral-600 before:opacity-0 before:invisible'
 			}`}>
-			<Link href={href}>{label}</Link>
+			<Link
+				href={href}
+				onClick={onClick}>
+				{label}
+			</Link>
 		</li>
 	);
 };

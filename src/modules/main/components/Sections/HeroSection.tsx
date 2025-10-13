@@ -7,7 +7,7 @@ import { CompanyStatsContainer } from '../CompanyStats/CompanyStatsContainer';
 export const HeroSection = () => {
 	return (
 		<section className='w-full flex flex-col lg:flex-row items-center justify-between gap-8 px-4 py-4 sm:py-16 space-y-6'>
-			<article className='max-w-lg w-full text-center lg:text-left space-y-6 flex flex-col justify-center lg:justify-start items-center lg:items-start'>
+			<article className='max-w-lg w-full text-center lg:text-left space-y-6 flex flex-col justify-center lg:justify-start items-center lg:items-start animate-fade-right'>
 				<span className='inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full font-semibold text-sm sm:text-base'>
 					Best Juicer <BottleWineIcon />
 				</span>
@@ -29,7 +29,7 @@ export const HeroSection = () => {
 
 				<CompanyStatsContainer />
 			</article>
-			<figure>
+			<figure className='animate-fade-left'>
 				<Image
 					src='/img/children.png'
 					alt='Hero Image'

@@ -9,18 +9,12 @@ import { ReasonsSection } from '@/modules/main/components/Sections/ReasonsSectio
 
 export default function Home() {
 	return (
-		<div className='max-w-7xl mx-auto w-full min-h-dvh'>
-			<Navbar />
-
-			<main className='p-4'>
-				<HeroSection />
-				<ReasonsSection />
-				<AmazingInfoSection />
-				<NutritionalSection />
-				<FacebookFeedSection />
-			</main>
-
-			<Footer />
-		</div>
+		<>
+			<HeroSection />
+			<ReasonsSection />
+			<AmazingInfoSection />
+			<NutritionalSection />
+			<FacebookFeedSection />
+		</>
 	);
 }

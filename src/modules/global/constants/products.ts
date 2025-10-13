@@ -1,0 +1,96 @@
+export const PRODUCTS = [
+	{
+		id: 1,
+		name: 'Green Vitality',
+		price: 3.33,
+		image: '/img/juice-1.webp',
+		description: 'A refreshing blend of green apple, spinach, and ginger for a natural energy boost.',
+		color: 'green',
+		isNew: true,
+	},
+	{
+		id: 6,
+		name: 'Wild Berry Mix',
+		price: 3.69,
+		image: '/img/juice-2.webp',
+		description: 'A bold mix of strawberry, cranberry, and cherry — sweet, tart, and irresistible.',
+		color: 'wine',
+		isNew: false,
+	},
+	{
+		id: 7,
+		name: 'Sunny Orange',
+		price: 3.29,
+		image: '/img/juice-3.webp',
+		description: 'Classic orange juice with a bright and zesty flavor — pure sunshine in a sip.',
+		color: 'orange',
+		isNew: true,
+	},
+	{
+		id: 5,
+		name: 'Ruby Bliss',
+		price: 3.59,
+		image: '/img/juice-2.webp',
+		description: 'Velvety texture with red fruits and a hint of pomegranate for a smooth finish.',
+		color: 'wine',
+		isNew: false,
+	},
+	{
+		id: 8,
+		name: 'Citrus Burst',
+		price: 3.49,
+		image: '/img/juice-3.webp',
+		description: 'A tangy combination of orange, lemon, and tangerine — bold and refreshing.',
+		color: 'orange',
+		isNew: false,
+	},
+	{
+		id: 2,
+		name: 'Tropical Green',
+		price: 3.49,
+		image: '/img/juice-1.webp',
+		description: 'Exotic mix of kiwi, lime, and pineapple that tastes like summer in a bottle.',
+		color: 'green',
+		isNew: false,
+	},
+	{
+		id: 9,
+		name: 'Tropical Sunset',
+		price: 3.69,
+		image: '/img/juice-3.webp',
+		description: 'A smooth orange-mango blend that captures the flavor of a summer evening.',
+		color: 'orange',
+		isNew: true,
+	},
+	{
+		id: 3,
+		name: 'Minty Detox',
+		price: 3.59,
+		image: '/img/juice-1.webp',
+		description: 'Cool cucumber and mint fusion that refreshes your mind and body.',
+		color: 'green',
+		isNew: false,
+	},
+	{
+		id: 4,
+		name: 'Berry Punch',
+		price: 3.39,
+		image: '/img/juice-2.webp',
+		description: 'Rich in antioxidants — a mix of grape, blueberry, and raspberry for a fruity explosion.',
+		color: 'wine',
+		isNew: false,
+	},
+] as const;
+
+export const PRODUCT_COLOR = {
+	orange: 'bg-orange-100',
+	green: 'bg-green-100',
+	wine: 'bg-red-100',
+};
+
+export const HOVER_PRODUCT_COLOR = {
+	orange: 'bg-orange-50',
+	green: 'bg-green-50',
+	wine: 'bg-red-50',
+};
+
