@@ -5,7 +5,7 @@ import { Spinner } from '@/modules/global/components/ui/spinner';
 import { MoveRightIcon } from 'lucide-react';
 
 const ValidateAccountPage = () => {
-	const { data, goToLogin, isFetching } = useValidateAccount();
+	const { goToLogin, isFetching } = useValidateAccount();
 
 	return (
 		<>
