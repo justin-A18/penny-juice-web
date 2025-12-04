@@ -1,11 +1,12 @@
 'use client';
 
-import { MenuIcon, ShoppingCartIcon } from 'lucide-react';
+import { MenuIcon, ShoppingCartIcon, UserIcon } from 'lucide-react';
 
 import { NavLogo } from './NavLogo';
 import { NavItems } from './NavItems';
 import { useNavbar } from './useNavbar';
 import { ShoppingCart } from '../shopping-cart/ShoppingCart';
+import Link from 'next/link';
 
 export const Navbar = () => {
 	const { isOpenMenu, toggleMenu, onCloseMenu, isCartOpen, toggleCart } =
@@ -32,6 +33,11 @@ export const Navbar = () => {
 						onClick={toggleCart}>
 						<ShoppingCartIcon />
 					</button>
+					<Link
+						href='/login'
+						className='cursor-pointer'>
+						<UserIcon />
+					</Link>
 					<button
 						className='block sm:hidden cursor-pointer'
 						onClick={toggleMenu}>

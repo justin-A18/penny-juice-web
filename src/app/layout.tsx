@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import { TanStackQueryProvider } from '@/modules/global/providers/TanstackProvider';
+import { Toaster } from '@/modules/global/components/ui/sonner';
 
 const poppins = Poppins({
 	variable: '--font-poppins',
@@ -24,7 +26,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${poppins.variable} antialiased`}>{children}</body>
+			<body className={`${poppins.variable} antialiased`}>
+				<TanStackQueryProvider>
+					{children}
+					<Toaster />
+				</TanStackQueryProvider>
+			</body>
 		</html>
 	);
 }
