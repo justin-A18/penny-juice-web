@@ -5,14 +5,14 @@ import httpClient from "@/modules/global/providers/http/httpProvider";
 import { LoginUserResponse } from "../interfaces/response/login-user-response.interface";
 
 export const loginUser = async (body: LoginUserBody): Promise<BaseResponse<LoginUserResponse>> => {
-	return httpClient("auth/login", {
+	return httpClient("/auth/login", {
 		method: "post",
 		body
 	});
 };
 
 export const registerUser = async (body: RegisterUserBody): Promise<BaseResponse> => {
-	return httpClient("auth/register", {
+	return httpClient("/auth/register", {
 		method: "post",
 		body
 	});
@@ -20,7 +20,7 @@ export const registerUser = async (body: RegisterUserBody): Promise<BaseResponse
 
 
 export const resetPassword = async (email: string): Promise<BaseResponse> => {
-	return httpClient("auth/reset-password", {
+	return httpClient("/auth/reset-password", {
 		method: "post",
 		body: { email }
 	});
@@ -29,14 +29,14 @@ export const resetPassword = async (email: string): Promise<BaseResponse> => {
 export const changePassword = async (body: ChangePasswordBody): Promise<BaseResponse> => {
 	const { token, password } = body;
 
-	return httpClient(`auth/change-password/${token}`, {
+	return httpClient(`/auth/change-password/${token}`, {
 		method: "post",
 		body: { password }
 	});
 };
 
 export const verifyEmail = async (token: string): Promise<BaseResponse> => {
-	return httpClient(`auth/validate-email/${token}`, {
+	return httpClient(`/auth/validate-email/${token}`, {
 		method: "get",
 	});
 };
